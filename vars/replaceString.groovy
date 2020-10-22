@@ -1,4 +1,4 @@
-def replaceString(String fileName) {
+def call(String fileName) {
   def text = readFile file: "${fileName}"
 
   text = text.replaceAll("%BUILD_NUMBER", "${BUILD_NUMBER}")
